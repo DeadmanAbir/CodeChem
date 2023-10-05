@@ -69,7 +69,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div className=" lg:hidden visible absolute right-2 top-5">
+      <div className=" lg:hidden visible absolute right-2 top-10">
         {mobileView ? (
           <CloseIcon onClick={handlemobileView} />
         ) : (
