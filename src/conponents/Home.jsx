@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="bg-[#141414] h-screen">
-      <div className="flex flex-col justify-center items-center lg:w-[59%] px-5 py-10 lg:py-0 lg:mx-auto pt-[50%] lg:pt-[15%] text-center">
+      <div className="flex flex-col justify-center items-center lg:w-[59%] px-5 py-10 lg:py-0 lg:mx-auto pt-[30%] lg:pt-[10%] text-center">
         <h1 className="text-[36px] leading-[58px] lg:text-[96px] font-[900] lg:leading-[96px] text-[#dee3ea]">
           Inspire. Educate. Empower
         </h1>
@@ -14,18 +14,16 @@ const Home = () => {
           approach.
         </p>
         <a
-         onClick={() => {
-          const navbar = document.getElementById("course_section"); 
-           const navbarPosition = navbar.offsetTop;
+          onClick={() => {
+            const navbar = document.getElementById("course_section");
+            const navbarPosition = navbar.offsetTop;
 
-         
-          window.scrollTo({
-            top: navbarPosition,
-            behavior: "smooth", // Smooth scrolling animation
-          });
-        }}
+            window.scrollTo({
+              top: navbarPosition,
+              behavior: "smooth", // Smooth scrolling animation
+            });
+          }}
           rel="noopener noreferrer"
-         
           className="relative text-white mt-5 bg-[#5942E9] w-max items-center rounded-full py-3 px-7 font-medium transition-all duration-75 focus-visible:before:absolute focus-visible:before:-top-1 focus-visible:before:-left-1 focus-visible:before:-right-1 focus-visible:before:-bottom-1 focus-visible:before:rounded-full focus-visible:before:border focus-visible:before:border-primary disabled:cursor-not-allowed bg-primary text-content/90 ring-1 ring-primary-hover before:border-primary/30 hover:bg-primary-hover hover:text-content hover:ring-primary active:bg-primary disabled:bg-primary-disable disabled:hover:bg-primary-disable group flex flex-row gap-1"
         >
           <span>Courses</span>

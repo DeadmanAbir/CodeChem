@@ -4,7 +4,7 @@ import { useState } from "react";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
-  const [mobileView, setMobileView] = useState(true);
+  const [mobileView, setMobileView] = useState(false);
 
   const handlemobileView = () => {
     setMobileView(!mobileView);
@@ -13,21 +13,34 @@ const Navbar = () => {
   return (
     <div className="bg-[#141414] text-[#dee3ea] sticky top-0 z-10 reltive backdrop-blur-3xl">
       <div className="flex lg:justify-evenly justify-between items-center text-white px-5 py-6">
-        <div>
-          <h1 className="text-[24px] font-[600] leading-[24px]">CodeChem</h1>
+        <div className="flex items-center">
+          <img
+            src="../src/assets/CodeChem logo.png"
+            alt=""
+            width={60}
+            height={60}
+          />
+          <h1 className="text-[24px] font-[600] leading-[24px] cursor-pointer">
+            CodeChem
+          </h1>
         </div>
         <div className="lg:flex gap-10 items-center text-[18px] font-[600] leading-[28px] lg:visible hidden">
-          <p  onClick={() => {
-                const navbar = document.getElementById("course_section"); // Assuming 'navbar' is the id of your navbar element
-                const navbarPosition = navbar.offsetTop;
+          <p
+            className="cursor-pointer"
+            onClick={() => {
+              const navbar = document.getElementById("course_section"); // Assuming 'navbar' is the id of your navbar element
+              const navbarPosition = navbar.offsetTop;
 
-                // Scroll to the navbar position
-                window.scrollTo({
-                  top: navbarPosition,
-                  behavior: "smooth", // Smooth scrolling animation
-                });
-              }}>Course</p>
-          <p>Events</p>
+              // Scroll to the navbar position
+              window.scrollTo({
+                top: navbarPosition,
+                behavior: "smooth", // Smooth scrolling animation
+              });
+            }}
+          >
+            Course
+          </p>
+          <p className="cursor-pointer">Events</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -63,7 +76,7 @@ const Navbar = () => {
           <ListIcon onClick={handlemobileView} />
         )}
       </div>
-     {mobileView?  <MobileNav /> : null}
+      {mobileView ? <MobileNav /> : null}
     </div>
   );
 };

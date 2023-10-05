@@ -2,7 +2,10 @@ import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
 const Course = () => {
   return (
-    <div id="course_section" className="bg-[#141414] pb-20 flex justify-evenly items-center lg:h-screen">
+    <div
+      id="course_section"
+      className="bg-[#141414] pb-20 flex justify-evenly items-center lg:h-screen"
+    >
       <div className="text-[#dee3ea] flex lg:flex-row flex-col justify-evenly items-center px-5 lg:px-20 pt-32">
         <div className="lg:hidden visible">
           <img src="../src/assets/courses.f2c1856875197487b345.png" alt="" />
@@ -39,9 +42,8 @@ const Course = () => {
               $0/month
             </h1>
             <Link
-             to="/courses"
+              to="/courses"
               rel="noopener noreferrer"
-              
               className="relative mt-5 bg-[#5942E9] w-max items-center rounded-full py-3 px-7 font-medium transition-all duration-75 focus-visible:before:absolute focus-visible:before:-top-1 focus-visible:before:-left-1 focus-visible:before:-right-1 focus-visible:before:-bottom-1 focus-visible:before:rounded-full focus-visible:before:border focus-visible:before:border-primary disabled:cursor-not-allowed bg-primary text-content/90 ring-1 ring-primary-hover before:border-primary/30 hover:bg-primary-hover hover:text-content hover:ring-primary active:bg-primary disabled:bg-primary-disable disabled:hover:bg-primary-disable group flex flex-row gap-1"
             >
               <span>Explor Courses</span>
@@ -66,7 +68,7 @@ const Course = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:visible hidden">
+        <div className=" lg:block hidden">
           <img src="../src/assets/courses.f2c1856875197487b345.png" alt="" />
         </div>
       </div>

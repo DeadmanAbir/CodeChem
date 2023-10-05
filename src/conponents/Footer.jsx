@@ -55,9 +55,17 @@ const Footer = () => {
         <div className="">
           <hr className=" border-2" />
           <div className="flex lg:flex-row flex-col items-center justify-between">
-            <h1 className="text-[20px] font-[900] leading-[28px] py-3">
-              CodeChem
-            </h1>
+            <div className="flex items-center">
+              <img
+                src="../src/assets/CodeChem logo.png"
+                alt=""
+                width={50}
+                height={50}
+              />
+              <h1 className="text-[20px] font-[900] leading-[28px] cursor-pointer">
+                CodeChem
+              </h1>
+            </div>
             <div className="flex gap-3 py-3">
               <InstagramIcon />
               <LinkedInIcon />

@@ -7,18 +7,13 @@ import About from "./conponents/About";
 import Footer from "./conponents/Footer";
 import Faq from "./conponents/Faq";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ConstructionTag from "./conponents/ConstructionTag";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <LandingPage />
-    ),
+    element: <LandingPage />,
   },
   {
     path: "courses",
@@ -29,24 +24,22 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-   
-    <RouterProvider router={router} />
-     
-      
+      <Navbar />
+      <RouterProvider router={router} />
+      <Footer />
+      <ConstructionTag />
     </>
   );
 }
 
 export default App;
- function LandingPage(){
-  return(
+function LandingPage() {
+  return (
     <>
-    <Navbar />
-    <Home />
-    <About />
-    <Course />
-    <Faq />
-      <Footer />
+      <Home />
+      <About />
+      <Course />
+      <Faq />
     </>
-  )
- }
+  );
+}
