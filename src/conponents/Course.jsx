@@ -1,5 +1,6 @@
 import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
+import CoursePic from "../assets/courses.f2c1856875197487b345.png"
 const Course = () => {
   return (
     <div
@@ -8,7 +9,7 @@ const Course = () => {
     >
       <div className="text-[#dee3ea] flex lg:flex-row flex-col justify-evenly items-center px-5 lg:px-20 pt-32">
         <div className="lg:hidden visible">
-          <img src="../src/assets/courses.f2c1856875197487b345.png" alt="" />
+          <img src={CoursePic} alt="" />
         </div>
         <div className="lg:w-[45%]">
           <h1 className="text-[30px] lg:text-[48px] font-[600] leading-[48px] text-[#dee3ea] py-8">
@@ -69,7 +70,7 @@ const Course = () => {
           </div>
         </div>
         <div className=" lg:block hidden">
-          <img src="../src/assets/courses.f2c1856875197487b345.png" alt="" />
+          <img src={CoursePic} alt="" />
         </div>
       </div>
     </div>

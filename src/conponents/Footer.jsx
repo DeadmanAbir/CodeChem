@@ -3,7 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-
+import logo from "../assets/CodeChem logo.png"
 const Footer = () => {
   return (
     <div className="bg-[#141414]">
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="flex lg:flex-row flex-col items-center justify-between">
             <div className="flex items-center">
               <img
-                src="../src/assets/CodeChem logo.png"
+                src={logo}
                 alt=""
                 width={50}
                 height={50}

@@ -1,11 +1,12 @@
-const CourseCard = ({ name, bio, link, picName }) => {
+
+const CourseCard = ({ name, bio, link, picName}) => {
   return (
     <div>
       <div>
         <div className="bg-[#1E1F1F] rounded-2xl px-3 py-5 lg:w-[55%] flex flex-col gap-6 my-6 ">
           <div className="">
             <img
-              src={`../src/assets/${picName}`}
+              src={picName}
               alt=""
               className="rounded-xl"
             />

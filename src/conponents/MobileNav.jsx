@@ -4,7 +4,16 @@ const MobileNav = () => {
       <div className="py-8 px-8 border border-gray-500 w-[60%] flex flex-col gap-5 justify-center items-center rounded-xl mt-5">
         <div className="text-[30px] font-[400] leading-[36px] flex flex-col gap-5">
           <p>About</p>
-          <p>Courses</p>
+          <p  onClick={() => {
+              const navbar = document.getElementById("course_section"); // Assuming 'navbar' is the id of your navbar element
+              const navbarPosition = navbar.offsetTop;
+
+              // Scroll to the navbar position
+              window.scrollTo({
+                top: navbarPosition,
+                behavior: "smooth", // Smooth scrolling animation
+              });
+            }}>Courses</p>
           <p>Join</p>
         </div>
 

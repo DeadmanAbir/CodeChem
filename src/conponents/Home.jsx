@@ -10,7 +10,7 @@ const Home = () => {
           <span className="text-yellow-400">free hands-on training</span> in
           various fields of computer and chemical science and have an inclusive
           community focusing on a{" "}
-          <span className="text-yellow-400">learn by doing</span>
+          <span className="text-yellow-400">learn by doing{" "}</span>
           approach.
         </p>
         <a

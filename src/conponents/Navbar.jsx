@@ -2,7 +2,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import ListIcon from "@mui/icons-material/List";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
-
+import logo from "../assets/CodeChem logo.png"
 const Navbar = () => {
   const [mobileView, setMobileView] = useState(false);
 
@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex lg:justify-evenly justify-between items-center text-white px-5 py-6">
         <div className="flex items-center">
           <img
-            src="../src/assets/CodeChem logo.png"
+            src={logo}
             alt=""
             width={60}
             height={60}

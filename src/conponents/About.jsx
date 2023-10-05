@@ -1,11 +1,11 @@
 import StarIcon from "@mui/icons-material/Star";
-
+import about from "../assets/aboutus.02f2915b9ae736e9ef8a.png"
 const About = () => {
   return (
     <div className="bg-gradient-to-b-r flex justify-evenly items-center lg:h-screen py-20">
       <div className="text-[#dee3ea] flex lg:flex-row flex-col justify-evenly items-center px-5 lg:px-20">
         <div>
-          <img src="../src/assets/aboutus.02f2915b9ae736e9ef8a.png" alt="" />
+          <img src={about} alt="" />
         </div>
         <div className="lg:w-[45%]">
           <h1 className="text-[30px] lg:text-[48px] font-[600] leading-[48px] text-[#dee3ea] py-8">
@@ -15,7 +15,7 @@ const About = () => {
           <div className="flex gap-3">
             <StarIcon className="text-[#5942e9]" />
             <p className="text-[16px] lg:text-[18px] font-[500] leading-[28px] tracking-[0.9px]">
-              We believe that everyone, irrespective of their college or branch,
+              We believe that everyone, irrespective of their  branch,
               technical or non-technical background can make it big. CodeChem
               is an initiative built on this thought.
             </p>

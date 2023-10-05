@@ -19,17 +19,17 @@ const ConstructionTag = () => {
         </div>
         <div>
           <p className="text-[14px] font-[500] leading-[20px]">
-            Under Construction
+            Website Under Construction
           </p>
         </div>
         <div>
           <a
-            target="_blank"
+           
             rel="noopener noreferrer"
-            href="#"
+            
             className="relative text-[#dee3ea] bg-[#5942E9] w-max items-center font-medium transition-all duration-75 focus-visible:before:absolute focus-visible:before:-top-1 focus-visible:before:-left-1 focus-visible:before:-right-1 focus-visible:before:-bottom-1 focus-visible:before:rounded-full focus-visible:before:border focus-visible:before:border-primary disabled:cursor-not-allowed bg-primary text-content/90 ring-1 ring-primary-hover before:border-primary/30 hover:bg-primary-hover hover:text-content hover:ring-primary active:bg-primary disabled:bg-primary-disable disabled:hover:bg-primary-disable group flex flex-row gap-1 rounded-full p-1 px-3"
           >
-            <span>Events</span>
+            {/* <span>Events</span> */}
             <svg
               viewBox="0 0 16 16"
               height="1em"
