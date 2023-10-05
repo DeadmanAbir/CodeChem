@@ -1,6 +1,6 @@
 const MobileNav = () => {
   return (
-    <div className=" flex justify-center items-center backdrop-blur-3xl z-10">
+    <div className=" flex justify-center items-start backdrop-blur-3xl h-screen z-10">
       <div className="py-8 px-8 border border-gray-500 w-[60%] flex flex-col gap-5 justify-center items-center rounded-xl mt-5">
         <div className="text-[30px] font-[400] leading-[36px] flex flex-col gap-5">
           <p>About</p>
