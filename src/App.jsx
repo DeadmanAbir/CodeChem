@@ -5,9 +5,10 @@ import Course from "./conponents/Course";
 import ExplorCourses from "./conponents/ExplorCourses";
 import About from "./conponents/About";
 import Footer from "./conponents/Footer";
+import Error from "./conponents/Error";
 import Faq from "./conponents/Faq";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import ConstructionTag from "./conponents/ConstructionTag";
 
 const router = createBrowserRouter([
@@ -16,9 +17,13 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
-    path: "courses",
+    path: "/courses",
     element: <ExplorCourses />,
   },
+  {
+    path: "*",
+    element: <Error />
+  }
 ]);
 
 function App() {
@@ -43,3 +48,4 @@ function LandingPage() {
     </>
   );
 }
+
