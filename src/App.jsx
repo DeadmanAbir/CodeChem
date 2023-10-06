@@ -10,29 +10,37 @@ import Faq from "./conponents/Faq";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import ConstructionTag from "./conponents/ConstructionTag";
+import { LabelRounded } from "@mui/icons-material";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
+    element: <Layout />,
+    children : [
+      {
+        path : '/',
+        element : <LandingPage />
+      },
+      {
+        path: "/courses",
+        element: <ExplorCourses />,
+      },
+      {
+        path: "*",
+        element: <Error />
+      }
+    ]
   },
-  {
-    path: "/courses",
-    element: <ExplorCourses />,
-  },
-  {
-    path: "*",
-    element: <Error />
-  }
+  
 ]);
 
 function App() {
   return (
     <>
-      <Navbar />
+    
       <RouterProvider router={router} />
-      <Footer />
-      <ConstructionTag />
+     
+      
     </>
   );
 }
@@ -47,5 +55,15 @@ function LandingPage() {
       <Faq />
     </>
   );
+}
+function Layout(){
+  return (
+    <>
+      <Navbar/>
+      <Outlet/>
+      <Footer />
+      <ConstructionTag />
+    </>
+  )
 }
 
