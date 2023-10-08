@@ -3,6 +3,7 @@ import ListIcon from "@mui/icons-material/List";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import logo from "../assets/CodeChem logo.png"
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileView, setMobileView] = useState(false);
 
@@ -20,9 +21,9 @@ const Navbar = () => {
             width={60}
             height={60}
           />
-          <h1 className="text-[24px] font-[600] leading-[24px] cursor-pointer">
+          <Link to="/"><h1 className="text-[24px] font-[600] leading-[24px] cursor-pointer">
             CodeChem
-          </h1>
+          </h1></Link>
         </div>
         <div className="lg:flex gap-10 items-center text-[18px] font-[600] leading-[28px] lg:visible hidden">
           <p
@@ -42,9 +43,9 @@ const Navbar = () => {
           </p>
           <p className="cursor-pointer">Events</p>
           <a
-            target="_blank"
+           
             rel="noopener noreferrer"
-            href="#"
+           
             className="relative bg-[#5942E9] w-max items-center rounded-full py-3 px-7 font-medium transition-all duration-75 focus-visible:before:absolute focus-visible:before:-top-1 focus-visible:before:-left-1 focus-visible:before:-right-1 focus-visible:before:-bottom-1 focus-visible:before:rounded-full focus-visible:before:border focus-visible:before:border-primary disabled:cursor-not-allowed bg-primary text-content/90 ring-1 ring-primary-hover before:border-primary/30 hover:bg-primary-hover hover:text-content hover:ring-primary active:bg-primary disabled:bg-primary-disable disabled:hover:bg-primary-disable group flex flex-row gap-1"
           >
             <span>Partner</span>

@@ -2,7 +2,7 @@ import StarIcon from "@mui/icons-material/Star";
 import about from "../assets/aboutus.02f2915b9ae736e9ef8a.png"
 const About = () => {
   return (
-    <div className="bg-gradient-to-b-r flex justify-evenly items-center lg:h-screen py-20">
+    <div className="bg-gradient-to-b-r flex justify-evenly items-center lg:h-screen py-20" id="about_section">
       <div className="text-[#dee3ea] flex lg:flex-row flex-col justify-evenly items-center px-5 lg:px-20">
         <div>
           <img src={about} alt="" />
