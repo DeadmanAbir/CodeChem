@@ -3,7 +3,16 @@ const MobileNav = () => {
     <div className=" flex justify-center items-start backdrop-blur-3xl h-screen z-10">
       <div className="py-8 px-8 border border-gray-500 w-[60%] flex flex-col gap-5 justify-center items-center rounded-xl mt-5">
         <div className="text-[30px] font-[400] leading-[36px] flex flex-col gap-5">
-          <p>About</p>
+          <p onClick={() => {
+              const navbar = document.getElementById("about_section"); // Assuming 'navbar' is the id of your navbar element
+              const navbarPosition = navbar.offsetTop;
+
+              // Scroll to the navbar position
+              window.scrollTo({
+                top: navbarPosition,
+                behavior: "smooth", // Smooth scrolling animation
+              });
+            }}>About</p>
           <p  onClick={() => {
               const navbar = document.getElementById("course_section"); // Assuming 'navbar' is the id of your navbar element
               const navbarPosition = navbar.offsetTop;
@@ -19,9 +28,9 @@ const MobileNav = () => {
 
         <div>
           <a
-            target="_blank"
+            
             rel="noopener noreferrer"
-            href="#"
+           
             className="relative mt-5 bg-[#5942E9] w-max items-center rounded-full py-3 px-7 font-medium transition-all duration-75 focus-visible:before:absolute focus-visible:before:-top-1 focus-visible:before:-left-1 focus-visible:before:-right-1 focus-visible:before:-bottom-1 focus-visible:before:rounded-full focus-visible:before:border focus-visible:before:border-primary disabled:cursor-not-allowed bg-primary text-content/90 ring-1 ring-primary-hover before:border-primary/30 hover:bg-primary-hover hover:text-content hover:ring-primary active:bg-primary disabled:bg-primary-disable disabled:hover:bg-primary-disable group flex flex-row gap-1"
           >
             <span>Partner</span>
