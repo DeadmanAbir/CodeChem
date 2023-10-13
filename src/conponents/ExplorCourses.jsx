@@ -1,9 +1,11 @@
 import CourseCard from "./CourseCard";
-import { DSA, DSA2, JAVASCRIPT } from "../../CourseContent";
+import { DSA, DSA2, JAVASCRIPT, FRONTEND } from "../../CourseContent";
 // import Navbar from "./Navbar";
 import dsaJava from "../assets/dsa java.jpg"
 import dsa2 from "../assets/dsa c++.png";
 import Javascript from "../assets/Javascript.jpg"
+import Frontend from "../assets/Frontend.jpg"
+import Frontend2 from "../assets/Frontend2.jpg"
 const ExplorCourses = () => {
   return (
     <div className="bg-[#141414] text-[#dee3ea]">
@@ -38,6 +40,14 @@ const ExplorCourses = () => {
               bio={JAVASCRIPT.bio}
               link={JAVASCRIPT.link}
               picName={Javascript}
+            />
+          </div>
+          <div>
+            <CourseCard
+              name={FRONTEND.name}
+              bio={FRONTEND.bio}
+              link={FRONTEND.link}
+              picName={Frontend}
             />
           </div>
         </div>
