@@ -9,7 +9,7 @@ import Frontend2 from "../assets/Frontend2.jpg";
 const ExplorCourses = () => {
   return (
     <div className="bg-[#141414] text-[#dee3ea]">
-      <div className="lg:px-20 px-5 py-22 lg:w-[75%] mx-auto">
+      <div className="lg:px-20 px-5 py-24 lg:w-[90%] mx-auto">
         <div>
           <h1 className="text-[30px] lg:text-[48px] font-[600] leading-[48px] text-[#dee3ea] py-8">
             Courses
