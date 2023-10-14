@@ -2,7 +2,7 @@ const CourseCard = ({ name, bio, link, picName }) => {
   return (
     <div>
       <div className="">
-        <div className="bg-[#1E1F1F] rounded-2xl px-3 py-5 lg:w-[24rem] flex flex-col gap-6 my-6 ">
+        <div className="bg-[#1E1F1F] rounded-2xl px-3 py-5 lg:w-[22rem] flex flex-col gap-6 mt-12 ">
           <div className="">
             <img src={picName} alt="" className="rounded-xl" />
           </div>
