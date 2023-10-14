@@ -16,7 +16,7 @@ const ExplorCourses = () => {
             <hr className="border-4 mt-4 rounded-3xl w-[7rem] lg:w-[10rem] border-[#5942E9]" />
           </h1>
         </div>
-        <div className="flex gap-20 flex-wrap w-[100%] mx-20">
+        <div className="flex gap-20 lg:flex-row flex-col flex-wrap w-[100%] mx-48">
           <CourseCard
             name={DSA.name}
             bio={DSA.bio}
