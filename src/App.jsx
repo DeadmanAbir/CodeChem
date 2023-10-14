@@ -16,10 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children : [
+    children: [
       {
-        path : '/',
-        element : <LandingPage />
+        path: "/",
+        element: <LandingPage />,
       },
       {
         path: "/courses",
@@ -27,20 +27,16 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <Error />
-      }
-    ]
+        element: <Error />,
+      },
+    ],
   },
-  
 ]);
 
 function App() {
   return (
     <>
-    
       <RouterProvider router={router} />
-     
-      
     </>
   );
 }
@@ -56,14 +52,13 @@ function LandingPage() {
     </>
   );
 }
-function Layout(){
+function Layout() {
   return (
     <>
-      <Navbar/>
-      <Outlet/>
+      <Navbar />
+      <Outlet />
       <Footer />
       <ConstructionTag />
     </>
-  )
+  );
 }
-

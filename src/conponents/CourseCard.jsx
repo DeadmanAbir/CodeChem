@@ -1,15 +1,10 @@
-
-const CourseCard = ({ name, bio, link, picName}) => {
+const CourseCard = ({ name, bio, link, picName }) => {
   return (
     <div>
-      <div>
-        <div className="bg-[#1E1F1F] rounded-2xl px-3 py-5 lg:w-[55%] flex flex-col gap-6 my-6 ">
+      <div className="">
+        <div className="bg-[#1E1F1F] rounded-2xl px-3 py-5 lg:w-[30rem] flex flex-col gap-6 my-6 ">
           <div className="">
-            <img
-              src={picName}
-              alt=""
-              className="rounded-xl"
-            />
+            <img src={picName} alt="" className="rounded-xl" />
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="text-[18px] lg:text-[20px] font-[600] leading-[28px]">
