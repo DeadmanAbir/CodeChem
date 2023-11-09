@@ -2,6 +2,8 @@
 
 CodeChem is a web application for the coding club if USCT that allows students to practice and learn various programming languages and concepts. Users can choose from a range of courses, topics, and problems that suit their level and interest. CodeChem also provides an online guidance and more.
 
+Checkout our website - https://codechem.netlify.app/
+
 ## Features
 
 - Interactive and hands-on courses that cover topics such as Python, Java, C++, SQL, HTML/CSS, JavaScript, web development, data structures and algorithms, data analytics, and more.
