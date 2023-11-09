@@ -77,7 +77,7 @@ const Navbar = () => {
           <ListIcon onClick={handlemobileView} />
         )}
       </div>
-      {mobileView ? <MobileNav /> : null}
+      {mobileView ? <MobileNav handleMobileView={handlemobileView}/> : null}
     </div>
   );
 };

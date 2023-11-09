@@ -1,6 +1,6 @@
 import CourseCard from "./CourseCard";
 import { DSA, DSA2, JAVASCRIPT, FRONTEND } from "../../CourseContent";
-// import Navbar from "./Navbar";
+
 import dsaJava from "../assets/dsa java.jpg";
 import dsa2 from "../assets/dsa c++.png";
 import Javascript from "../assets/Javascript.jpg";

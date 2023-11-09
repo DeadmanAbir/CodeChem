@@ -1,4 +1,4 @@
-const MobileNav = () => {
+const MobileNav = ({handleMobileView}) => {
   return (
     <div className=" flex justify-center items-start backdrop-blur-3xl h-screen z-10">
       <div className="py-8 px-8 border border-gray-500 w-[60%] flex flex-col gap-5 justify-center items-center rounded-xl mt-5">
@@ -12,6 +12,7 @@ const MobileNav = () => {
                 top: navbarPosition,
                 behavior: "smooth", // Smooth scrolling animation
               });
+              handleMobileView();
             }}>About</p>
           <p  onClick={() => {
               const navbar = document.getElementById("course_section"); // Assuming 'navbar' is the id of your navbar element
@@ -22,6 +23,8 @@ const MobileNav = () => {
                 top: navbarPosition,
                 behavior: "smooth", // Smooth scrolling animation
               });
+              handleMobileView();
+
             }}>Courses</p>
           <p>Join</p>
         </div>
